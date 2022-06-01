@@ -24,7 +24,7 @@ const decrement = () => {
                 <button className="Button" onClick={increment}>+</button>
             </div>
             <div>
-                <button className="Button" onClick={() => onAdd(quantity)}>Agregar al carrito</button>
+                <button className="Button" onClick={() => onAdd(quantity)}>Agregar a tu compra</button>
             </div>
         </div>
     )

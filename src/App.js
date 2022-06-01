@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
@@ -13,11 +13,11 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path='/' element={<ItemListContainer greeting="Todos los Productos"/>}/>
-            <Route path='/category/:categoryId' element={<ItemListContainer greeting="En Stock:"/>}/>
-            <Route path='/about' element={<h1>About</h1>}/>
+            <Route path='/categoria/:categoryId' element={<ItemListContainer greeting="En Stock:"/>}/>
+            <Route path='/detalle/:productId' element={<ItemDetailContainer />}/>
+            <Route path='/*' element={<h1>PAGE NOT FOUND ERROR 404</h1>} />
           </Routes>
         </BrowserRouter> 
-        <ItemDetailContainer />
     </div>
   );
 }

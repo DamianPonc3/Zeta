@@ -5,9 +5,9 @@ import ItemCount from "../ItemCount/ItemCount"
 const Item = ({id, name, img}) => {
     return (
         <div className="CardItem">
-            <img src={img}/>
+            <img src={img} alt={name}/>
             <h1>{name}</h1>
-            <Link to={`/detail/${id}`} className='Option'>Ver detalle</Link>
+            <Link to={`/detalle/${id}`} className='Option'>Más detalles</Link>
             <ItemCount />
         </div>
     )

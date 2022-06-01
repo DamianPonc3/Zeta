@@ -10,9 +10,9 @@ const Navbar = () => {
             <h1>Zeta</h1>
           </Link>
           <div className="Categories">
-              <NavLink to='/category/remeras' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Remeras</NavLink>
-              <NavLink to='/category/joggers' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Joggers</NavLink>
-              <NavLink to='/category/shorts' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Shorts</NavLink>
+              <NavLink to='/categoria/remeras' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Remeras</NavLink>
+              <NavLink to='/categoria/joggers' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Joggers</NavLink>
+              <NavLink to='/categoria/shorts' className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Shorts</NavLink>
           </div>
       </nav>
   )
