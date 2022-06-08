@@ -1,29 +1,49 @@
-import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
+import ItemCount from '../ItemCount/ItemCount'
+import CartContext from '../context/CartContext'
 
-const ItemDetail = ({name, img, precio, descripcion, stock}) => {
+const ItemDetail = ({ id, name, img, category, description, precio, stock }) => {
     const [quantity, setQuantity] = useState(0)
-    const handleOnAdd = (count) =>{
-        console.log("agregue al carrito")
-        console.log(count)
-        setQuantity(count)
+
+    const { addItem, getProduct } = useContext(CartContext)
+
+    const handleOnAdd = (quantity) => {
+        console.log('agregue al carrito')
+        console.log(quantity)
+        setQuantity(quantity)
+
+        addItem({ id, name, precio, quantity })
     }
 
-    return(
-        <div className='Container'>
-            <div className='card-title'>
-                <h1>Detalle del producto seleccionado:</h1>
+    return (
+        <article className="CardItem">
+            <header className="Header">
+                <h2 className="ItemHeader">
+                    {name}
+                </h2>
+            </header>
+            <picture>
+                <img src={img} alt={name} className="ItemImg"/>
+            </picture>
+            <section>
+                <p className="Info">
+                    Categoria: {category}
+                </p>
+                <p className="Info">
+                    Descripción: {description}
+                </p>
+                <p className="Info">
+                    Precio: {precio}
+                </p>
+            </section>           
+            <div>
+                { quantity > 0  
+                    ? <Link to='/cart' className='Option'>Finalizar compra</Link> 
+                    : <ItemCount stock={stock} onAdd={handleOnAdd} initial={getProduct(id)?.quantity}/>}
             </div>
-            <div className='card-body'>
-            <img src={img} alt={name}/>
-            <h2>{name}</h2>
-            <h3>{descripcion}</h3>
-            <h4>${precio}</h4>
-            { quantity > 0 ? <Link to='/cart'>Finalizar Compra</Link> : <ItemCount stock={stock} onAdd={handleOnAdd}/>}
-            </div>
-        </div>
+        </article>
     )
 }
 

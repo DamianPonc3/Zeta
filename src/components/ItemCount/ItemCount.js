@@ -1,33 +1,36 @@
 import './ItemCount.css'
 import { useState } from 'react'
 
-const ItemCount = ({stock, initial = 0, onAdd})=> {
-    const [count, setCount] = useState(initial)
+const ItemCount = ({stock, initial = 1, onAdd})=> {
+    const [quantity, setQuantity] = useState(initial)
+
+console.log(initial)
+console.log(quantity)
 
 const increment = () => {
-        if(count < stock) {
-            setCount(count + 1)
-        }
+        if(quantity < stock) {
+    setQuantity(quantity+1)
     }
+}
 
 const decrement = () => {
-        if(count > 1) {
-            setCount(count - 1)
-        }     
-    }
+        if(quantity > 1) {
+    setQuantity(quantity - 1)
+    }     
+}
 
-    return(
-        <div className='Counter'>          
+return(
+    <div className='Counter'>          
             <div className='Controls'>
                 <button className="Button" onClick={decrement}>-</button>
-                <h4 className='Number'>{count}</h4>
+                <h4 className='Number'>{quantity}</h4>
                 <button className="Button" onClick={increment}>+</button>
             </div>
             <div>
-                <button className="Button" onClick={() => onAdd(count)}>Agregar a tu compra</button>
+                <button className="Button" onClick={() => onAdd(quantity)}>Agregar a la compra</button>
             </div>
-        </div>
-    )
+    </div>
+)
 
 }
 export default ItemCount
