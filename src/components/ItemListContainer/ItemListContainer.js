@@ -8,7 +8,6 @@ import { getProductsByCategory } from '../../asyncmock'
 const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-
     const { categoryId } = useParams()
 
     useEffect(() => {
@@ -34,12 +33,12 @@ const ItemListContainer = ({ greeting }) => {
     }, [categoryId])
 
     if(loading) {
-        return <h1>Loading...</h1>
+        return <h1>Cargando...</h1>
     }
 
     return(
         <div className='ItemListContainer'>
-            <h1>{ greeting }</h1>
+            <h1>{greeting}</h1>
             { 
                 products.length > 0 
                     ? <ItemList products={products} />

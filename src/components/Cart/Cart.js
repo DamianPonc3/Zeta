@@ -7,7 +7,7 @@ const Cart = () => {
 
     return(
         <div>
-            <h1>Cart</h1>
+            <h1>Tu compra</h1>
             <div>
                 {cart.map(prod => {
                     return(
@@ -16,13 +16,14 @@ const Cart = () => {
                             <div>Cantidad: {prod.quantity}</div>
                             <div>Precio x Uni: ${prod.precio}</div>
                             <div>Subtotal: ${prod.precio * prod.quantity}</div>
-                            <button onClick={() => removeItem(prod.id)}>X</button>
+                            
+                            <button onClick={() => removeItem(prod.id)}>Eliminar productos</button>
                         </div>
                     )})
                 }
+                <button>Finalizar Compra</button>
             </div>
         </div>
     )
 }
-
 export default Cart
