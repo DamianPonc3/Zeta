@@ -3,11 +3,11 @@ import CartContext from "../context/CartContext"
 
 const Cart = () => {
 
-    const { cart, removeItem } = useContext(CartContext)
+    const { cart, removeItem, getTotal } = useContext(CartContext)
 
     return(
         <div>
-            <h1>Tu compra</h1>
+            <h1>Tu compra:</h1>
             <div>
                 {cart.map(prod => {
                     return(
@@ -21,6 +21,7 @@ const Cart = () => {
                         </div>
                     )})
                 }
+                <h3>Total: ${getTotal()}</h3>
                 <button>Finalizar Compra</button>
             </div>
         </div>
