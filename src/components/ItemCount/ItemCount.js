@@ -27,7 +27,7 @@ return(
                 <button className="Button" onClick={increment}>+</button>
             </div>
             <div>
-                <button className="Button" onClick={() => onAdd(quantity)}>Agregar a la compra</button>
+                <button className="Button" onClick={() => onAdd(quantity)}>Agregar al carrito</button>
             </div>
     </div>
 )
