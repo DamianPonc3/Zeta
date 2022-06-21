@@ -11,6 +11,9 @@ const Cart = () => {
 
     const quantity = getQuantity()
 
+
+    const ids = cart.map(prod => prod.id)
+
     return(
         <div className="cart-Container">
             
