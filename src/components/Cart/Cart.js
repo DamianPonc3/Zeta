@@ -7,7 +7,7 @@ import "./cart.css"
 const Cart = () => {
 
 
-    const { cart, removeItem, getTotal, getQuantity } = useContext(CartContext)
+    const { cart, removeItem, getTotal, getQuantity, cleanCart } = useContext(CartContext)
 
     const quantity = getQuantity()
 
@@ -37,6 +37,7 @@ const Cart = () => {
                 <Link to='/order'>
                     <button className="Button">Continuar con tu compra</button>
                 </Link>
+                <button className="Button" onClick={cleanCart}>Eliminar Orden</button>
             </div> : 
             <h3> Aún no agregaste ningun producto a la compra</h3>}
         </div>

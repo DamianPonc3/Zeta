@@ -6,7 +6,7 @@ import CartContext from '../context/CartContext';
 import { useNotification } from '../../Notification/notification'
 import "./Form.css"
 
-const OrderEnd = () => {
+const Form = () => {
     const { cart, getTotal, cleanCart, getQuantity } = useContext(CartContext);
     const [loading, setLoading] = useState(false)
     const { setNotification } = useNotification()
@@ -18,8 +18,6 @@ const OrderEnd = () => {
         phone: ""
     });
 
-
-    
     const handleChange = e => {
         setFormData({
             ...formData,
@@ -157,4 +155,4 @@ const OrderEnd = () => {
 }
 
 
-export default OrderEnd;
+export default Form;

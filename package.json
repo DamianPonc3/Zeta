@@ -16,6 +16,7 @@
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "zeta_ecommerce",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
