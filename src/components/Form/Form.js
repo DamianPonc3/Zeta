@@ -50,6 +50,9 @@ const OrderEnd = () => {
                 setCreatingOrder(false);
                 setFormData({ name: "", email: "", phone: "" });
                 setLoading(false)
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 1500);
             });
 
         const ids = cart.map(prod => prod.id)
