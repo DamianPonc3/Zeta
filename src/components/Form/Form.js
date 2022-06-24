@@ -2,7 +2,7 @@ import { db } from "../../services/firebase";
 import { addDoc, collection, Timestamp, getDocs, query, where, documentId, writeBatch } from "firebase/firestore";
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import CartContext from '../context/CartContext';
+import CartContext from '../../context/CartContext'
 import { useNotification } from '../../Notification/notification'
 import "./Form.css"
 
