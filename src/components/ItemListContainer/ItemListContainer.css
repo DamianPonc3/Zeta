@@ -3,12 +3,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 80vh;
 }
 
 .ItemListContainer h1{
     color: white;
-    background-color: rgba(0, 0, 0, 0.575);
+    background: #4E944F;
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -16,3 +15,7 @@
     cursor:default 
 }
 
+.material-symbols-outlined{
+    font-size: 60px;
+    color: #4E944F;
+}

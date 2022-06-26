@@ -1,0 +1,55 @@
+.container-pago{
+    margin-bottom: -30px;
+    height: 100px;
+    margin-bottom: 50px;
+    border: 1px solid #4E944F;
+}
+
+.pago{
+    max-width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.modos_de_pago{
+    display: flex;
+    height: 160px;
+    margin: 0 auto;
+    max-width: 1184px;
+    overflow: hidden;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+
+.data-pago{
+    flex: 1 0 auto;
+    font-size: 18px;
+    height: 90px;
+    white-space: nowrap;
+}
+
+.data-Icon img{
+    width: 30px;
+    height: 30px;
+    margin: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.data-title{
+    display: inline-block;
+    margin-top: 1px;
+}
+
+.data-subtitle{
+    color: #999;
+    font-size: 15px;
+    margin-left: 70px;
+    margin-top: -55px;
+    cursor: pointer;
+}
+
+.data-title h5{
+    top: 5px;
+}
+
