@@ -2,19 +2,22 @@
     margin-top: 25px;
     margin-left: 28%;
     display: flex;
-    background-color: #16a1f2a5;
+    background-color: #C3E5AE;
     width: 600px;
     justify-content: center;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 
+
 .cart-info{
-    background: #0b398979;
+    background: #4E944F;
     border-radius: 10px;
 }
 
 .cart-info p{
     color: white;
+    padding-top: 15px;
 }
 
 .cart h1{
@@ -26,11 +29,11 @@
 }
 
 .cart span{
-    color: #15E887;
+    color: #4E944F;
 }
 
 .button-cart {
-    background-color: #000000b2;
+    background-color: #4E944F;
     border-radius: 100px;
     color: #000000;
     cursor: pointer;
@@ -52,7 +55,7 @@
 }
 
 .button-cart_black{
-    background: #000000b2;
+    background: #4E944F;
     border-radius: 100px;
     box-shadow: linear-gradient(90deg, rgba(255,10,10,1) 2%, rgba(0,0,0,0.9335084375547094) 32%);;
     color: #000000;
@@ -73,4 +76,24 @@
 
 .button-cart_black:hover {
     box-shadow: linear-gradient(90deg, rgba(255,10,10,1) 2%, rgba(0,0,0,0.9335084375547094) 32%);;
+}
+
+.button-cart_black__{
+    background: rgba(0, 0, 0, 0.437);
+    border-radius: 100px;
+    box-shadow: linear-gradient(90deg, rgba(255,10,10,1) 2%, rgba(0,0,0,0.9335084375547094) 32%);;
+    color: #000000;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 21px
 }

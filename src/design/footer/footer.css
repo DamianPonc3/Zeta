@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+
+.footer{
+    left: 0;
+    right: 0;
+    margin-top: 112px;
+    width: 100%;
+}
+
+.social-media-links{
+    background: #C3E5AE;
+	overflow: hidden;
+	padding-bottom: 4px;
+	text-align: center;
+}
+
+.social-media-links ul{
+    margin-bottom: 25px;
+	padding: 0;
+}
+
+.social-media-links li{
+    display: inline;
+	margin: 15px;
+	padding: 0;
+}
+
+.social-media-links a{
+    border-bottom: 0px solid rgba(0,0,0,0.95);
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 79px;
+    margin-left: 77px;
+    margin-top: 10px;
+    height: 30px;
+	position: relative;
+	transition: .2s ease-in;
+    width: 30px;
+}
+
+.social-media-links a:hover{
+    transform: translateY(-4px);
+}
+
+.social-media-links svg{
+    left: 1px;
+    position: absolute;
+    top: 1px;
+	height: 30px;
+	width: 30px;
+    fill: #4E944F;
+    
+}
+
+.social-media-links a:hover{
+    box-shadow: -3px 50px 12px -26px #4E944F;
+    transition: 1s;
+}

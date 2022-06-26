@@ -16,25 +16,25 @@ const Cart = () => {
             
             {quantity ? 
             <div className="cart">
-                <h1>Tu compra:</h1>
+                <h1>Tu carrito:</h1>
                 {cart.map(prod => {
                     return(
                         <div className="cart-info" key={prod.id}>
-                            <div><p>{prod.name}</p></div>
+                            <div className="info__"><p>{prod.name}</p></div>
                             <div><p>Cantidad: {prod.quantity}</p></div>
-                            <div><p>Precio x Uni: ${prod.precio}</p></div>
-                            <div><p>Subtotal: ${prod.precio * prod.quantity}</p></div>
+                            <div><p>Precio por producto: ${prod.precio}</p></div>
+                            <div><p>Precio total: ${prod.precio * prod.quantity}</p></div>
                             
-                            <button className="Button" onClick={() => removeItem(prod.id)}>Eliminar productos</button>
+                            <button className="button-cart_black__" onClick={() => removeItem(prod.id)}>Eliminar productos</button>
                         </div>
                     )})
                 }
-                <h3>Total: ${getTotal()}</h3>
+                <h3>Total a pagar: <span>${getTotal()}</span></h3>
 
                 <Link to='/order'>
-                    <button className="Button">Continuar con tu compra</button>
+                    <button className="button-cart">Continuar con tu compra</button>
                 </Link>
-                <button className="Button" onClick={cleanCart}>Eliminar Orden</button>
+                <button className="button-cart_black" onClick={cleanCart}>Eliminar pedido</button>
             </div> : 
             <h3> Aún no agregaste ningun producto a la compra</h3>}
         </div>
