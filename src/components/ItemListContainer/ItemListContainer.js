@@ -4,8 +4,6 @@ import ItemList from '../ItemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from "firebase/firestore"
 import { db } from "../../services/firebase"
-import Slider from "../../design/slider/slider"
-import Pago from "../../design/mediosDePago/pago"
 
 
 const ItemListContainer = ({ greeting }) => {
@@ -40,12 +38,7 @@ const ItemListContainer = ({ greeting }) => {
 
     return(
         <div className='ItemListContainer'>
-            <Slider />
-            <Pago />
-            <h1>{categoryId} Productos más vendidos</h1>
-            <span className="material-symbols-outlined">
-keyboard_double_arrow_down
-            </span>
+            <h1>{categoryId} en stock:</h1>
             { 
                 products.length > 0 
                     ? <ItemList products={products} />
