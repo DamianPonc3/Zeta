@@ -135,7 +135,7 @@ const Form = () => {
                                     required
                                 />
                             </div>
-                            <button 
+                            <button className="button-confirm"
                                 disabled={
                                     !formData.name ||
                                     !formData.phone ||

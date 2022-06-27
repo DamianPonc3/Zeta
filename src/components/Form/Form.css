@@ -3,21 +3,21 @@ form {
     margin: 0 auto;
     margin-top: 5%;
     padding: 2%;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,0.4209033955379027) 100%);
+    background: #C3E5AE;
 }
-  
-form h1 {
+
+form label {
     font-weight: 100;
-    color: white;
+    color: rgb(64, 64, 64);
     text-align: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(79, 98, 148);
+    border-bottom: 1px solid rgb(82, 82, 83);
+    font-size: 1rem;
 }
-  
 
-form p {
-    color: #bf1650;
-    font-size: 8px;
+form input {
+    color: #000;
+    font-size: 1rem;
 }
 
 form p::before {
@@ -87,6 +87,16 @@ form h3{
     color: #ffff;
 }
 
-.Button{
-    width: 100%;
+.button-confirm{
+    width: auto;
+    background-color: #C3E5AE;
+    border: none;
+    border-radius: 10px;
+    height: 1.5rem;
+    font-size: .9375rem;
+    color: #ffff;
+}
+.button-confirm:hover{
+    background-color: #5c7e47;
+    transition: 0.5s;
 }

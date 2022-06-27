@@ -80,17 +80,17 @@
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: white;
+    background: rgb(222, 220, 220);
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: white;
+    background: rgb(222, 220, 220);
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: white;
+    background: rgb(222, 220, 220);
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: white;
+    background: rgb(222, 220, 220);
 }
