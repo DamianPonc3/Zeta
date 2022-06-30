@@ -3,6 +3,7 @@ import CartWidget from '../CartWidget/CartWidget'
 import './Navbar.css'
 import { Link, NavLink } from 'react-router-dom'
 import CartContext from '../../context/CartContext'
+import Search from "../Search/Search"
 
 const Navbar = () => {
 
@@ -16,6 +17,11 @@ const Navbar = () => {
           <div>
             <Link to='/' className='title'>
               <h1>Ecommerce Zeta</h1>
+            </Link>
+          </div>
+          <div>
+            <Link to='/Search'>
+              <Search />
             </Link>
           </div>
           <div className='carrito'>

@@ -69,3 +69,10 @@ img {
 }
 
 
+@media all and (max-width: 1020px){
+.Header{
+    display: none;
+}
+}
+
+
